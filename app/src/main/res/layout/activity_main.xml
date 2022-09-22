@@ -38,6 +38,7 @@
         android:id="@+id/btDescobrir"
         android:layout_width="229dp"
         android:layout_height="58dp"
+        android:onClick="descobrir"
         android:text="Descobrir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
