@@ -10,7 +10,8 @@
         android:id="@+id/idNome"
         android:layout_width="206dp"
         android:layout_height="54dp"
-        android:text="TextView"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,9 +20,10 @@
 
     <TextView
         android:id="@+id/idAno"
-        android:layout_width="197dp"
-        android:layout_height="61dp"
-        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="51dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +34,8 @@
         android:id="@+id/idResultado"
         android:layout_width="302dp"
         android:layout_height="94dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,11 +47,64 @@
         android:id="@+id/btCompartilhar"
         android:layout_width="215dp"
         android:layout_height="66dp"
+        android:backgroundTint="#F14747"
         android:onClick="compartilhar"
         android:text="Compartilhar"
+        app:icon="?attr/actionModeShareDrawable"
+        app:iconSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idResultado"
         app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/idTituloAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Ano:"
+        app:layout_constraintBottom_toTopOf="@+id/idAno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNome" />
+
+    <TextView
+        android:id="@+id/idTituloNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Nome:"
+        app:layout_constraintBottom_toTopOf="@+id/idNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/idNome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@mipmap/ic_usuario_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/idAno"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
